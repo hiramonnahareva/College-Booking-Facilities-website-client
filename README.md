@@ -1,6 +1,6 @@
 ## [Live-Link](https://college-booking-faciliti-670bd.web.app/)
 
-## [Server-code](https://github.com/hiramonnahareva/College-Booking-Facilities-wesite-server)
+## [Server-Code](https://github.com/hiramonnahareva/College-Booking-Facilities-wesite-server)
 
 ## [video](https://www.awesomescreenshot.com/video/28563784?key=525e35518a34fda426e4a034bb5b3456)
 
