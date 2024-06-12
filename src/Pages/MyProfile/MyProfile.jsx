@@ -14,7 +14,7 @@ const MyProfile = () => {
     const [user] = useAuthState(auth)
     useEffect(() => {
         if (user) {
-            fetch(`http://localhost:5000/user/${user.email}`)
+            fetch(`https://college-booking-facilities-wesite-server.onrender.com/user/${user.email}`)
                 .then(res => res.json())
                 .then(data => setCurrent(data))
         }
@@ -28,7 +28,7 @@ const MyProfile = () => {
         const {displayName, email, address, phone, education} = data;
         console.log(_id, data)
         const updateUser = {displayName, email, address, phone, education};
-        const url = `http://localhost:5000/user/${_id}`;
+        const url = `https://college-booking-facilities-wesite-server.onrender.com/user/${_id}`;
        if(_id){
         fetch (url, {
             method: 'PUT',

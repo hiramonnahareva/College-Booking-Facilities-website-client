@@ -27,8 +27,8 @@ const ViewRecipeButton = ({ user, recipe }) => {
     
     try {
       const [userRes, recipeRes] = await Promise.all([
-        fetch(`http://localhost:5000/api/users/${userId}`),
-        fetch(`http://localhost:5000/api/colleges/${recipe._id}`)
+        fetch(`https://college-booking-facilities-wesite-server.onrender.com/api/users/${userId}`),
+        fetch(`https://college-booking-facilities-wesite-server.onrender.com/api/colleges/${recipe._id}`)
       ]);
 
       userData = await userRes.json();
@@ -51,7 +51,7 @@ const ViewRecipeButton = ({ user, recipe }) => {
       const confirmPurchase = window.confirm('You are about to spend 10 coins. Do you want to proceed?');
       if (confirmPurchase) {
         // Perform the transaction
-        const response = await fetch('http://localhost:5000/api/colleges/purchase', {
+        const response = await fetch('https://college-booking-facilities-wesite-server.onrender.com/api/colleges/purchase', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'

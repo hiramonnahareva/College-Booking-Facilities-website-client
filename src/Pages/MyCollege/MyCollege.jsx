@@ -15,7 +15,7 @@ const MyCollege = () => {
     // console.log(user.email)
     useEffect(() => {
         if (user) {
-            fetch(`http://localhost:5000/myCollege/${user?.email}`)
+            fetch(`https://college-booking-facilities-wesite-server.onrender.com/myCollege/${user?.email}`)
                 // , {
                 // headers: {
                 //     authorization: `Bearer ${localStorage.getItem('accessToken')}`,

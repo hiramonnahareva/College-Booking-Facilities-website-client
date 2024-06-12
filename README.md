@@ -1,6 +1,6 @@
-## Live-Link()
+## [Live-Link](https://college-booking-faciliti-670bd.web.app/)
 
-## Server-code (https://github.com/hiramonnahareva/College-Booking-Facilities-wesite-server)
+## [Server-code](https://github.com/hiramonnahareva/College-Booking-Facilities-wesite-server)
 
  ### Feature
 Full-stack project
@@ -13,11 +13,11 @@ Tailwind, DaisyUi, React js, Firebase for authentication and hosting, MongoDB, r
 
 ### Pages
 
-Home
-Colleges
-Admission
-My College
-My Profile
-My college
-Add Reviews
-Login & signup
+* Home
+* Colleges
+* Admission
+* My College
+* My Profile
+* My college
+* Add Reviews
+* Login & signup

@@ -24,7 +24,7 @@ const CollegeDetails = () => {
 
 
     useEffect(() => {
-        fetch(`http://localhost:5000/college/${id}`)
+        fetch(`https://college-booking-facilities-wesite-server.onrender.com/college/${id}`)
             .then(res => res.json())
             .then(data => setColleges(data))
     }, [id]);

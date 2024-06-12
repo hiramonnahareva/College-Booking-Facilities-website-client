@@ -1,11 +1,12 @@
 import { useEffect } from 'react';
 import auth from '../../firebase.init';
-import { useCreateUserWithEmailAndPassword, useSignInWithGoogle, useUpdateProfile } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword, useSignInWithGithub, useSignInWithGoogle, useUpdateProfile } from 'react-firebase-hooks/auth';
 import { useForm } from 'react-hook-form';
 // import { updateProfile } from 'firebase/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Loading from '../Shared/Loading';
 import UseToken from '../../Hooks/UseToken';
+import { FaGit, FaGithub } from 'react-icons/fa';
 
 const Signup = () => {
   const { register, handleSubmit, formState: { errors } } = useForm();
@@ -124,7 +125,7 @@ const Signup = () => {
             <div className="divider">OR</div>
 
             <button className='btn btn-outline btn-primary w-full' onClick={() => signInWithGoogle()}>Continue with Google</button>
-
+            <button className='btn btn-outline btn-primary w-full my-2' onClick={() => signInWithGithub()}><FaGithub/> Continue with Github</button>
           </div>
         </div>
       </div>

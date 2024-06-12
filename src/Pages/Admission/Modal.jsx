@@ -15,7 +15,7 @@ const Modal = ({ collegeName, setCollegeName }) => {
             phone: event.target.phone.value,
             dateOfBirth: event.target.dateOfBirth.value,
         }
-            fetch(`http://localhost:5000/myCollege/${user.email}`, {
+            fetch(`https://college-booking-facilities-wesite-server.onrender.com/myCollege/${user.email}`, {
                 method: "PUT",
                 headers: {
                     'content-type': 'application/json'

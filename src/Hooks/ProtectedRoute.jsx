@@ -14,7 +14,7 @@ const ProtectedRoute = ({children}) => {
         if (!user) {
             swal({
                 title: "Please Login!",
-                text: "You need to login for add recipe.",
+                text: "You need to login for enter this route.",
                 icon: "warning",
                 dangerMode: true,
               })

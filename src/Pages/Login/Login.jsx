@@ -4,6 +4,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import UseToken from '../../Hooks/UseToken';
 import Loading from '../Shared/Loading';
+import { FaGithub } from 'react-icons/fa';
 
 const Login = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
@@ -12,7 +13,7 @@ const Login = () => {
     const location = useLocation();
     const from = location.state?.from?.pathname || "/";
 
-   
+
 
 
 
@@ -96,10 +97,9 @@ const Login = () => {
                         </div>
                         <p className='pt-2'>New To Here <Link className='text-secondary ' to='/signup'>Please Sign Up</Link></p>
                         <div className="divider">OR</div>
-
                         <button className='btn btn-outline btn-primary w-full' onClick={() => signInWithGoogle()}>Continue with Google</button>
+                        <button className='btn btn-outline btn-primary w-full my-2' onClick={() => signInWithGithub()}><FaGithub /> Continue with Github</button>
                     </div>
-
                 </div>
             </div>
         </div>

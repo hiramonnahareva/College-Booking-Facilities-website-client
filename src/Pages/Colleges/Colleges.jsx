@@ -8,7 +8,7 @@ const Colleges = () => {
     const [College, setCollege] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/colleges')
+        fetch('https://college-booking-facilities-wesite-server.onrender.com/colleges')
             .then(res => res.json())
             .then(data => setCollege(data))
     }, [])

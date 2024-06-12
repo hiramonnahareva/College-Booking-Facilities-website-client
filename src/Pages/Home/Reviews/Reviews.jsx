@@ -35,7 +35,7 @@ const Reviews = () => {
     };
     const [reviews, setreviews] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/reviews')
+        fetch('https://college-booking-facilities-wesite-server.onrender.com/reviews')
             .then(res => res.json())
             .then(data => setreviews(data))
     }, [])
