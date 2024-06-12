@@ -1,6 +1,6 @@
-## Live-Link[]
+## Live-Link()
 
-## Server-code[https://github.com/hiramonnahareva/College-Booking-Facilities-wesite-server]
+## Server-code (https://github.com/hiramonnahareva/College-Booking-Facilities-wesite-server)
 
  ### Feature
 Full-stack project
