@@ -16,7 +16,7 @@ const AboutMe = () => {
                     </div>
                         <h1 className='text-2xl font-semibold mt-6 mb-2'>EDUCATIONAL BACKGROUND</h1>
                         <p>BA(Bachelor of Arts) Hon&apos;s</p>
-                        <p>Studied at National Univarsity</p>
+                        <p>Studied at National University</p>
                     </div>
                     <div>
                         <h1 className='text-2xl font-semibold uppercase mt-6 mb-2'>Experiences</h1>

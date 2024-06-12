@@ -16,12 +16,12 @@ import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
                                   </a>
                                   <a
                                       className=" transform border-b border-primary
-                                   transition-all duration-700 ease-in-out" href="/recipes">Recipes
+                                   transition-all duration-700 ease-in-out" href="/colleges">colleges
                                   </a>
                                   <a
                                       className="transform border-b border-primary
-                                   transition-all duration-700 ease-in-out" href="/add-recipes">
-                                    Add Recipes
+                                   transition-all duration-700 ease-in-out" href="/admission">
+                                    Admission
                                   </a>
                           </div>
                               <div className="flex justify-center py-4 space-x-4">
@@ -41,7 +41,7 @@ import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
                                       <FaInstagram className='text-2xl' />
                                   </a> 
                           </div>
-                      <h6 className="text-center">&copy; Recipe Blogs {Year}</h6>
+                      <h6 className="text-center">&copy; College Booking Facilities {Year}</h6>
               </footer>
     );
 };

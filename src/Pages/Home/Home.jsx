@@ -1,17 +1,19 @@
-import AboutMe from './AboutMe';
 import Banner from './Banner';
-import ShareRecipes from './ShareRecipes';
-import SuccessStory from './SuccessStory';
-import AddCoins from './AddCoins';
+import College from './College/Colleges';
+import Gallery from './Gallery';
+import Research from './Research';
+import Reviews from './Reviews/Reviews';
 
 const Home = () => {
     return (
         <div>
            <Banner/>
-           <SuccessStory/>
-           <AboutMe/>
-           <ShareRecipes/>
-           <AddCoins/>
+           <div className='my-[190px]'>
+           <College />
+           <Gallery/>
+           <Research/>
+           <Reviews/>
+           </div>
         </div>
     );
 };

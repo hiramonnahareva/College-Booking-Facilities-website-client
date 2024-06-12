@@ -16,7 +16,7 @@ const ViewRecipeButton = ({ user, recipe }) => {
 
     // Case 2: User logged in and is the creator of this recipe
     if (user.uid === recipe.creatorId) {
-      history.push(`/recipes/${recipe._id}`);
+      history.push(`/colleges/${recipe._id}`);
       return;
     }
 
@@ -28,7 +28,7 @@ const ViewRecipeButton = ({ user, recipe }) => {
     try {
       const [userRes, recipeRes] = await Promise.all([
         fetch(`http://localhost:5000/api/users/${userId}`),
-        fetch(`http://localhost:5000/api/recipes/${recipe._id}`)
+        fetch(`http://localhost:5000/api/colleges/${recipe._id}`)
       ]);
 
       userData = await userRes.json();
@@ -36,7 +36,7 @@ const ViewRecipeButton = ({ user, recipe }) => {
 
       // Case 5: User logged in and already purchased the recipe
       if (recipeData.purchased_by.includes(user.email)) {
-        history.push(`/recipes/${recipe._id}`);
+        history.push(`/colleges/${recipe._id}`);
         return;
       }
 
@@ -51,7 +51,7 @@ const ViewRecipeButton = ({ user, recipe }) => {
       const confirmPurchase = window.confirm('You are about to spend 10 coins. Do you want to proceed?');
       if (confirmPurchase) {
         // Perform the transaction
-        const response = await fetch('http://localhost:5000/api/recipes/purchase', {
+        const response = await fetch('http://localhost:5000/api/colleges/purchase', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
@@ -64,7 +64,7 @@ const ViewRecipeButton = ({ user, recipe }) => {
 
         if (response.ok) {
           toast.success('Purchase successful! Redirecting to recipe...');
-          history.push(`/recipes/${recipe._id}`);
+          history.push(`/colleges/${recipe._id}`);
         } else {
           const result = await response.json();
           toast.error(`Purchase failed: ${result.message}`);

@@ -31,6 +31,7 @@
     "react-scroll-trigger": "^0.6.14",
     "react-toastify": "^10.0.5",
     "scrolltrigger": "^1.0.1",
+    "slick-carousel": "^1.8.1",
     "sweetalert": "^2.1.2"
   },
   "devDependencies": {

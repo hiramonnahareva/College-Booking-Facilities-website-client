@@ -6,7 +6,7 @@ const UseToken = user => {
        const email = user?.user?.email;
        const newUser = {email: email};
        if(email){
-           fetch(`https://recipe-sharing-web-server.onrender.com/users/${email}`, {
+           fetch(`http://localhost:5000/users/${email}`, {
                method: 'PUT',
                headers: {
                    'content-type': 'application/json'
