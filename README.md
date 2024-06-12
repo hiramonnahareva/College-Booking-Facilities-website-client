@@ -15,15 +15,15 @@
 * My Profile
 * My college
 * Add Reviews
-* Login & signup
+* Login & signup 
 
 
  ### Feature
-* Full-stack project
+* Full-stack project.
 * Implement user login.
 * Implement routing system uusing react router dom.
 * Responsive Website.
 
 ### Technologies
 
-Tailwind, DaisyUi, React js, Firebase for authentication and hosting, MongoDB, render server hosting site
+Tailwind, DaisyUi, React js, Firebase for authentication and hosting, MongoDB, render server hosting site.
