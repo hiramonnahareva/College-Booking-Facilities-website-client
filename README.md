@@ -13,9 +13,9 @@
 * Admission
 * My College
 * My Profile
-* My college
+* My College
 * Add Reviews
-* Login & signup 
+* Login & Signup 
 
 
  ### Feature
@@ -26,4 +26,4 @@
 
 ### Technologies
 
-Tailwind, DaisyUi, React js, Firebase for authentication and hosting, MongoDB, render server hosting site.
+Tailwind, DaisyUi, React js, Firebase for authentication and hosting, MongoDB, Render for server hosting site. 
